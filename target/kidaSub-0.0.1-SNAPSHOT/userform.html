@@ -1,0 +1,36 @@
+<a href="viewusers.jsp">View All Records</a><br/>
+
+<h1>Add New User</h1>
+<form action="adduser.jsp" method="post">
+<table>
+<tr><td>Issue Id:</td><td><input type="text" name="issue_id"/></td></tr>
+<tr><td>Issue Name:</td><td><input type="text" name="getIssue_name" value="VM-"/></td></tr>
+<tr><td>Issue Report Date:</td><td><input type="text" name="issue_report_date" placeholder="dd-mm-YYYY"/></td></tr>
+<tr><td>Issue Update Date:</td><td><input type="text" name="issue_update_date" placeholder="dd-mm-YYYY"/></td></tr>
+<tr><td>Issue Heading:</td><td><input type="text" name="issue_heading"/></td></tr>
+<tr><td>Issue Description:</td><td><input type="text" name="issue_description"/></td></tr>
+<tr><td>Issue Status: submitted : 101, active : 102,completed : 103, defer : 104, working as designed : 105, pause : 106</td><td>
+<select name="issue_status" style="width:155px">
+submitted<option>101</option>
+<option>102</option>
+<option>103</option>
+<option>104</option>
+<option>105</option>
+<option>106</option>
+</select></td></tr>
+<tr><td>Issue Linked with:</td><td><input type="text" name="issue_linked_with" placeholder="VM-XXXXX"/></td></tr>
+<tr><td>Other information:</td><td><input type="text" name="issue_others"/></td></tr>
+<tr><td>Issue Closed Date:</td><td><input type="text" name="issue_closed" placeholder="dd-mm-YYYY"/></td></tr>
+<tr><td>Issue Type: epic : 101, story : 102, sub-story : 103, task : 104, sub-task : 105, bug :106</td><td>
+<select name="issue_type" style="width:155px" >
+<option>101</option>
+<option>102</option>
+<option>103</option>
+<option>104</option>
+<option>105</option>
+<option>106</option>
+</select>
+</td></tr>
+<tr><td colspan="2"><input type="submit" value="Add User"/></td></tr>
+</table>
+</form>
